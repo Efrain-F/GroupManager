@@ -1,0 +1,357 @@
+.allUsers{
+}
+
+.option-allUser{
+  padding: 12px;
+  font-size: 1rem;
+  background-color: transparent;
+  cursor: pointer;
+  color:  rgb(178, 177, 175);
+  
+
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+
+  transition-duration: .5s;
+  transition-property:color;
+}
+.option-allUser:hover{
+  color: rgb(218, 218, 218);
+}
+.allUsers-head-option-newUser{
+  background-color:  rgb(178, 177, 175);
+  border-radius: 7px;
+  color: rgb(23, 23, 23);
+  transition-duration: .5s;
+  transition-property: background-color;
+  text-decoration: none;
+}
+.allUsers-head-option-newUser:hover{
+  color: rgb(23, 23, 23);
+  background-color:  rgb(218, 218, 218);
+}
+
+
+
+.allUsers-table{
+  border-collapse: collapse;
+  width: 100%;
+}
+.allUsers-table-head{
+
+}
+.allUsers-table-head th{
+  text-align: left;
+  padding: 12px;
+  background-color: rgb(21, 21, 21);
+}
+.allUsers-table-head-action{
+  display: flex;
+  justify-content: center;
+}
+.allUsers-table-item{
+}
+.allUsers-table-item td{
+  padding: 12px;
+}
+.allUsers-table-item-all{
+  text-align: center;
+}
+.allUsers-table-item-all input{
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(50, 50, 50);
+  cursor: pointer;
+  transition-duration: .5s;
+  transition-property: background-color;
+  border-radius:4px;
+}
+.allUsers-table-item-all input:hover{
+  background-color: rgb(109, 109, 109);
+}
+.allUsers-table-item-all input:checked{
+  background-color: rgb(217, 217, 217);
+
+}
+.allUsers-table-item-name{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.allUsers-table-item-name img{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.allUsers-table-item-name h4{
+  font-size: 1.2rem;
+}
+.allUsers-table-item-name span{
+  color: rgba(240, 248, 255, 0.428);
+  font-size: .9rem;
+}
+.allUsers-table-item-role span{
+  padding: 10px;
+  border-radius: 12px;
+}
+.allUsers-table-item-status-Inactive span{
+  color: rgb(233, 153, 153);
+  font-size: 1.1rem;
+}
+.allUsers-table-item-status-Active span{
+  color: rgb(201, 233, 153);
+  font-size: 1.1rem;
+}
+.allUsers-table-item-action{
+  text-align: center;
+  position: relative;
+  
+}
+.allUsers-table-item-action button{
+  padding: 12px;
+  background-color: rgba(95, 95, 95, 0.376);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.allUsers-table-item-action-options{
+  position: absolute;
+  width: 0px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(95, 95, 95, 0.376);
+  border-radius: 12px;
+  
+  right: 20%;
+  bottom: -120px;
+  transition-property: all;
+  transition-duration: .7s;
+  overflow: hidden;
+  backdrop-filter: blur(20px);
+  z-index: 30;
+}
+.allUsers-table-item-action-options-btn{
+  background-color: transparent !important ;
+  color: rgb(236, 228, 236);
+  margin: 5px auto;
+  width: 110px;  
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: .9rem;
+  text-align: center;
+}
+
+.allUsers-table-item-action-options-btn:hover{
+  background-color: #333333 !important;
+}
+
+
+.user{
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+.user-head{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.user-head-fondo{
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+.user-head-describ{
+  background-color: rgb(31, 31, 31);
+  position: absolute;
+  width: 100%;
+  max-width: 1200px;
+  
+  border-radius: 10px 10px 0 0;
+  margin: auto;
+  bottom: 0;
+  height: 140px;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  padding:0 50px;
+}
+
+.user-head-describ img{
+  width: 170px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid white;
+  margin-top: -70px;
+}
+
+
+.user-head-describ-inf{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.user-head-describ-inf a{
+  text-decoration: none;
+  padding: 14px;
+  border-radius: 14px;
+  background-color: rgb(27, 25, 25);
+  color: aliceblue;
+  font-size: 1rem;
+  
+}
+.user-head-describ-inf-name{
+  display: flex;
+  gap: 0px;
+  flex-direction: column;
+}
+.user-head-describ-inf-name h3{
+  font-size: 1.8rem;
+}
+.user-head-describ-inf-name span{
+  font-size: 1rem;
+}
+.user-head-describ-inf-name img{
+  border-radius: 12px;
+  transform: scale(.9);
+  border: 3px solid rgb(31, 31, 31);
+  
+}
+
+.user-body{
+  margin:  0 auto;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 50px ;
+  padding-bottom: 30px;
+}
+.user-body p{
+  font-size: 1rem;
+  color: #d8d9d993;
+}
+.user-body-info{
+  padding: 30px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+
+.user-body-info-details{
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.user-body-info-text{
+  width: 100%;
+  max-width: 500px;
+}
+.user-body-info-text h4{
+  font-size: 1.6rem;
+}
+.user-body-info-details h4{
+  font-size: 1.6rem;
+}
+.user-body-info-details-list{
+
+}
+.user-body-info-details-list-item{
+  display: flex;
+
+}
+.user-body-info-details-list-item h5{
+  min-width: 200px;
+  font-size: 1.2rem;
+}
+.user-body-info-details-list-item span{
+  color: #d8d9d993;
+}
+
+.user-body-activity{
+  
+}
+.user-body-activity h4{
+  font-size: 1.6rem;
+  
+}
+
+.user-body-activity-list{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.user-body-activity-list li{
+  display: flex;
+  flex-direction: column;
+  background-color: #292929;
+  padding: 12px;
+
+}
+
+
+.user-body-activity-list-name{
+  width: 100%;
+}
+.user-body-activity-list-name h5{
+  font-size: 1.4rem;
+
+}
+.user-body-activity-list-name p{
+  font-size: 1.1rem;
+}
+.user-body-activity-list-details{
+  text-align: end;
+}
+
+.user-body-activity-list-details span{
+  font-size: 1.2rem;
+  margin-left: 20px;
+  
+}
+
+
+
+.loader{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.filterUser{
+  position: absolute;
+  right: 0;
+  bottom: -300px;
+  background-color: #1f1e1e;
+  width: 300px;
+  padding: 12px;
+  border-radius: 12px;
+  z-index: 30;
+}
+
+
+.filter{
+  padding: 8px;
+  background-color: #292929;
+  color: aliceblue;
+  font-size: 1.2rem;
+  margin-top: 12px;
+  border-radius: 7px;
+}

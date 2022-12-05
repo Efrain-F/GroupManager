@@ -1,0 +1,434 @@
+
+.option-allGroup{
+  padding: 12px;
+  font-size: 1rem;
+  background-color: transparent;
+  cursor: pointer;
+  color:  rgb(178, 177, 175);
+  
+
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+
+  transition-duration: .5s;
+  transition-property:color;
+}
+.option-allGroup:hover{
+  color: rgb(218, 218, 218);
+}
+
+.allGroup-head-option-newGroup{
+  background-color:  rgb(178, 177, 175);
+  border-radius: 7px;
+  color: rgb(23, 23, 23);
+  transition-duration: .5s;
+  transition-property: background-color;
+  text-decoration: none;
+}
+.allGroup-head-option-newGroup:hover{
+  color: rgb(23, 23, 23);
+  background-color:  rgb(218, 218, 218);
+}
+
+
+
+
+
+
+
+
+
+.groups{
+  display: grid;
+}
+
+.groups-card{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(26, 25, 25);
+  padding: 16px;
+  border-radius:20px;
+  align-items: center;
+  width: 300px;
+
+}
+
+.groups-card-head{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.groups-card-head h4{
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+.groups-card-head span{
+  color: rgb(219, 219, 219);
+  padding: 7px;
+  border-radius: 8px;
+}
+.groups-card-head-Active{
+  background-color: rgba(73, 251, 112, 0.467);
+
+}
+.groups-card-head-Inactive{
+  background-color: rgba(251, 73, 73, 0.467);
+
+}
+.groups-card-body{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+
+.groups-card-body-lider{
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+}
+.groups-card-body-lider img{
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.groups-card-body-lider-name h4{
+  font-size: 1.2rem;
+}
+.groups-card-body-lider-name span{
+  color: rgb(185, 185, 185);
+  font-size: 1rem;
+}
+.groups-card-body-describ{
+  display: flex;
+  gap: 60px;
+}
+.groups-card-body-describ h5{
+  font-size: 1rem;
+  color: rgb(150, 151, 151);
+}
+.groups-card-body-describ span{
+  font-size: 1.1rem;
+}
+
+.groups-card-footer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+}
+
+
+.groups-card-footer-mienbros {
+  display: flex;
+  flex-direction: row;
+  margin-left: 8px;
+}
+
+.groups-card-footer-mienbros img{
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-left: -8px;
+}
+.groups-card-footer-mienbros span{
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  background-color: rgba(54, 54, 55);
+  border-radius: 50%;
+  margin-left: -8px;
+  color: rgb(208, 207, 207);
+}
+
+
+.groups-card-footer-options{
+  cursor: pointer;
+  position: relative;
+}
+.groups-card-footer-options-list{
+  position: absolute;
+  background-color: rgb(52, 52, 52);
+  display: flex;
+  flex-direction: column;
+  right: 0;
+  width: 0px;
+  border-radius: 6px;
+  gap: 8px;
+  overflow: hidden;
+  padding: 8px 0;
+  top: 30px;
+  opacity: 0;
+  transition-duration: .8s;
+  transition-property: width opacity;
+  justify-content: center;
+  align-items: center;
+}
+.groups-card-footer-options-list-btn{
+  text-decoration: none;
+  font-size: 1rem;
+  background-color: transparent;
+  width: 120px;
+  border-radius: 6px;
+  padding: 4px;
+  text-align: center;
+  color: aliceblue;
+  margin: 0 8px;
+}
+.createActivity{
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  background-color: rgb(27, 27, 27);
+  color: aliceblue;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+}
+
+
+
+
+
+
+
+.group-body-listUsers-activity-foo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.group-body-listUsers-activity-foo-opt {
+  display: flex;
+  gap: 10px;
+  font-size: 1rem;
+}
+.group-body-listUsers-activity-foo-opt a{
+  color: aliceblue;
+  text-decoration: none;
+  background-color: rgb(28, 27, 27);
+  padding: 5px;
+  font-size: 1rem;
+
+  border-radius: 6px;
+}
+
+.group-body-listUsers-activity-foo-opt button{
+  color: aliceblue;
+  text-decoration: none;
+  background-color: rgb(28, 27, 27);
+  padding: 5px;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.group{
+  width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+.group-nav{
+  max-width: 1200px;
+  padding: 0 50px;
+  margin: 0 auto;
+  display: flex;
+  gap: 30px;
+}
+.group-nav a{
+  text-decoration: none;
+  font-size: 1.4rem;
+  border-bottom: 2px solid rgb(166, 163, 163);
+  padding: 6px;
+}
+.active{
+  color: aliceblue;
+}
+
+.noActive{
+  color: rgb(123, 125, 126);
+}
+
+.group-body{
+  max-width: 1200px;
+  padding: 0 50px;
+  margin: 30px auto;
+  padding-bottom: 40px !important;
+}
+.group-body-info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px;
+  padding-bottom: 40px;
+}
+.group-body-info-describ h4{
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+.group-body-info-describ p{
+  color: rgb(189, 189, 190);
+  font-size: 1rem;
+  max-width: 800px;
+}
+
+
+
+.group-body-info-objetive h4{
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.group-body-info-objetive p{
+  color: rgb(189, 189, 190);
+  font-size: 1.2rem;
+}
+
+
+.group-body-info-details {
+  margin-bottom: 0px;
+  width: 100%;
+
+}
+.group-body-info-details h4{
+  font-size: 1.6rem; 
+}
+
+.group-body-info-details-list{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 20px;
+}
+.group-body-info-details-list-item{
+  display: flex;
+  align-items: center;
+  background-color: rgb(36, 36, 36);
+  padding: 8px;
+  border-radius: 10px;
+  gap: 10px;
+}
+
+.group-body-info-details-list-item h5{
+  font-size: 1.2rem;
+}
+
+
+
+.group-body-info-details-list-item span{
+  font-size: 1.1rem;
+  color: rgb(176, 177, 178);
+
+}
+.groups{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+
+}
+
+.group-body-listUsers{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+
+
+.group-body-listUsers-user{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(36, 36, 36);
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.group-body-listUsers-user img{
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 6px; 
+}
+
+.group-body-listUsers-user-info{
+  text-align: center;
+}
+
+.group-body-listUsers-user-info h3{
+  font-size: 1.2rem;
+  color: rgb(208, 208, 208);
+}
+.group-body-listUsers-user-info h4{
+  font-size: .9rem;
+  color: rgb(118, 118, 118);
+}
+
+
+
+.group-body-listUsers-activity-info{
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.group-body-listUsers-activity-info-head{
+  margin: 8px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.group-body-listUsers-activity-info-status{
+}
+.group-body-listUsers-activity-info h3{
+  font-size: 1.2rem;
+  color: rgb(208, 208, 208);
+}
+.group-body-listUsers-activity-info h4{
+  font-size: .9rem;
+  color: rgb(118, 118, 118);
+}
+
+
+.group-body-listUsers-activity-user{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.group-body-listUsers-activity-user img{
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.group-body-listUsers-activity-user h5{
+  font-size: 1rem;
+}
+
+.group-body-listUsers-activity{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: rgb(36, 36, 36);
+  padding: 10px;
+  border-radius: 12px;
+  width: 100%;
+}
+.group-head-describ-inf-name{
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  gap: 12px;
+}

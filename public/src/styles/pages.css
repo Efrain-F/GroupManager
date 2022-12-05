@@ -1,0 +1,134 @@
+.page{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-color: rgb(31, 31, 31);
+    background: rgb(62,62,62);
+  background: linear-gradient(0deg, rgba(62,62,62,1) 0%, rgba(31,31,31,1) 80%);
+}
+.page-head{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+  padding-bottom: 18px;
+}
+
+.page-head-title{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.page-head-title h2{
+  color:  rgb(218, 218, 218);
+}
+.page-head-title span{
+  color: rgba(240, 248, 255, 0.468);
+}
+
+
+.page-head-option{
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 12px;
+  justify-content: space-between;
+}
+
+.page-head-option-select{
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font-size: 1.1rem;
+  background-color: rgb(48, 48, 48);
+  padding: 8px;
+  border-radius: 7px;
+  position: relative;
+  cursor: pointer !important;
+}
+
+
+.page-head-option-select-opt{
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  bottom: -80px;
+  padding: 12px;
+  gap: 7px;
+  background-color: rgb(30, 30, 30);
+  border-radius: 7px;
+  overflow: hidden;
+}
+.page-head-option-select-opt button{
+  background-color: transparent;
+  color: rgb(217, 217, 217);
+  font-size: 1rem;
+}
+.page-head-option-filter{
+  display: flex;
+  position: relative;
+}
+.page-head-option-filter-input{
+  background-color: rgb(48, 48, 48);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.3rem;
+  padding: 8px;
+  border-radius: 7px;
+
+}
+
+.page-head-option-filter-input input{
+  background-color: transparent;
+  border: none;
+  font-size: 1.2rem;
+  outline: none;
+  color: rgb(208, 208, 208);
+
+}
+
+.option-page{
+  padding: 12px;
+  font-size: 1rem;
+  background-color: transparent;
+  cursor: pointer;
+  color:  rgb(178, 177, 175);
+  
+
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+
+  transition-duration: .5s;
+  transition-property:color;
+}
+
+.option-page:hover{
+  color: rgb(218, 218, 218);
+}
+
+
+.page-head-option-new{
+
+  background-color:  rgb(178, 177, 175);
+  border-radius: 7px;
+  color: rgb(23, 23, 23);
+  transition-duration: .5s;
+  transition-property: background-color;
+  text-decoration: none;
+}
+
+.page-head-option-new:hover{
+  color: rgb(23, 23, 23);
+  background-color:  rgb(218, 218, 218);
+}
+
+button{
+  cursor: pointer;
+}
